@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="788.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.traveler.orderdisplay.Orderdisplayviewcontroller">
+<fx:include source="../block/Mainview.fxml" />
+   <TableView fx:id="tableView" layoutX="-1.0" layoutY="291.0" prefHeight="497.0" prefWidth="1020.0" style="-fx-background-color: #FFFFFF; -fx-border-color: black;">
+     <columns>
+         <TableColumn fx:id="Tid" prefWidth="70.99996948242188" style="-fx-font: 15px border; -fx-border-color: black;" text="订单id" />
+       <TableColumn fx:id="Tuser" prefWidth="97.33331298828125" style="-fx-font: 15px border; -fx-border-color: black;" text="下单用户" />
+       <TableColumn fx:id="Tname" prefWidth="110.33331298828125" style="-fx-font: 15px border; -fx-border-color: black;" text="路线名称" />
+         <TableColumn fx:id="Tways" prefWidth="109.99993896484375" style="-fx-font: 15px border; -fx-border-color: black;" text="交通方式" />
+         <TableColumn fx:id="Tprice" prefWidth="96.00006103515625" style="-fx-font: 15px border; -fx-border-color: black;" text="总费用(元)" />
+         <TableColumn fx:id="Ttime" prefWidth="99.66668701171875" style="-fx-font: 15px border; -fx-border-color: black;" text="总时间(h)" />
+         <TableColumn fx:id="Tdate" minWidth="0.0" prefWidth="80.66668701171875" style="-fx-font: 15px border; -fx-border-color: black;" text="下单时间" />
+         <TableColumn fx:id="Tdepiction" prefWidth="350.0" style="-fx-font: 15px border; -fx-border-color: black;" text="路线描述" />
+     </columns>
+   </TableView>
+   <Label layoutY="245.0" prefHeight="48.0" prefWidth="1020.0" style="-fx-alignment: center; -fx-background-color: #9D53CE;" text="订单详情">
+      <font>
+         <Font name="System Bold" size="27.0" />
+      </font>
+   </Label>
+   <Button layoutY="185.0" mnemonicParsing="false" onAction="#backtosystem" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #E3435A;" text="返回路线选择">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+</AnchorPane>

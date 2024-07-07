@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="725.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.traveler.orderscene.Orderviewcontroller">
+    <Label layoutY="42.0" prefHeight="48.0" prefWidth="725.0" style="-fx-alignment: center; -fx-background-color: #9D53CE;" text="订单详情">
+        <font>
+            <Font name="System Bold Italic" size="34.0" />
+        </font>
+    </Label>
+    <Label layoutX="194.0" layoutY="245.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="路线名称:">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="194.0" layoutY="290.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="交通方式:">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="169.0" layoutY="344.0" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: white;" text="路线价格(元):">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="150.0" layoutY="389.0" prefHeight="28.0" prefWidth="113.0" style="-fx-background-color: white;" text="所需时间(小时):">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Label>
+    <Button layoutX="155.0" layoutY="602.0" mnemonicParsing="false" onAction="#cancelorder" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #9D53CE;" text="取消订单" textFill="WHITE">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Button>
+   <Button layoutY="146.0" mnemonicParsing="false" onAction="#backtosystem" prefHeight="41.0" prefWidth="94.0" style="-fx-background-color: #1DD46B;" text="回到用户界面" textFill="WHITE">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Button>
+   <Label id="depiction" layoutX="13.0" layoutY="451.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="路线描述:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Button layoutX="431.0" layoutY="602.0" mnemonicParsing="false" onAction="#updateorder" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #9D53CE;" text="修改订单" textFill="WHITE">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Button>
+   <Label layoutX="194.0" layoutY="153.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="下单用户:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="194.0" layoutY="196.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="下单时间:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <TextArea fx:id="depiction" layoutX="86.0" layoutY="426.0" prefHeight="170.0" prefWidth="628.0" style="-fx-border-color: black;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></TextArea>
+   <Label layoutX="194.0" layoutY="118.0" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: white;" text="订单id:">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="id" layoutX="271.0" layoutY="116.0" prefHeight="30.0" prefWidth="341.0" style="-fx-background-color: white; ">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="error" layoutX="577.0" layoutY="608.0" prefHeight="28.0" prefWidth="123.0" />
+   <Label fx:id="user" layoutX="278.0" layoutY="149.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;">
+       <font>
+           <Font name="System Bold" size="15.0" />
+       </font>
+   </Label>
+   <TextField fx:id="name" layoutX="278.0" layoutY="244.0" prefHeight="23.0" prefWidth="214.0" style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></TextField>
+   <TextField fx:id="ways" layoutX="278.0" layoutY="289.0" prefHeight="23.0" prefWidth="214.0" style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></TextField>
+   <Label fx:id="date" layoutX="278.0" layoutY="192.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="price" layoutX="278.0" layoutY="340.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="time" layoutX="278.0" layoutY="385.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+</AnchorPane>

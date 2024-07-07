@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="828.0" prefWidth="1031.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.manager.usermanage.Usermanageviewcontroller">
+    <children>
+        <VBox fx:id="Anvbox" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="849.0" prefWidth="1067.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+                <fx:include source="../block/mainview.fxml" />
+                <TableView fx:id="tableView" layoutX="-1.0" layoutY="323.0" prefHeight="506.0" prefWidth="1036.0">
+                    <columns>
+                        <TableColumn fx:id="Tid" prefWidth="206.2" style="-fx-font: 15px bolder;" text="用户id" />
+                        <TableColumn fx:id="Tname" prefWidth="206.2" style="-fx-font: 15px bolder;" text="用户名称" />
+                        <TableColumn fx:id="Taccount" prefWidth="206.2" style="-fx-font: 15px bolder;" text="用户账号" />
+                        <TableColumn fx:id="Tpassword" prefWidth="206.2" style="-fx-font: 15px bolder;" text="用户密码" />
+                        <TableColumn fx:id="Tpower" prefWidth="206.2" style="-fx-font: 15px bolder;" text="用户身份" />
+                    </columns>
+                </TableView>
+                <Label id="tabletype" layoutX="1.0" layoutY="280.0" prefHeight="43.0" prefWidth="1036.0" style="-fx-alignment: center; -fx-background-color: green;" text="用户管理界面" textFill="#f6f6f6">
+                    <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                    </font></Label>
+                <Button layoutX="1.0" layoutY="235.0" mnemonicParsing="false" onAction="#deleteuser" prefHeight="32.0" prefWidth="64.0" style="-fx-background-color: red;" text="删除用户" textFill="WHITE" />
+                <Button layoutX="1.0" layoutY="174.0" mnemonicParsing="false" onAction="#queryuser" prefHeight="32.0" prefWidth="64.0" style="-fx-background-color: #046CA0;" text="查询用户" textFill="WHITE" />
+                <Button layoutX="948.0" layoutY="174.0" mnemonicParsing="false" onAction="#adduserscene" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #ffa500;" text="添加用户" textFill="WHITE"/>
+                <Button layoutX="946.0" layoutY="235.0" mnemonicParsing="false" onAction="#updateuser" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #1AD879;" text="修改用户信息" textFill="WHITE" />
+                <TextField fx:id="Qid" layoutX="65.0" layoutY="173.0" prefHeight="32.0" prefWidth="206.0" promptText="请输入用户名称或用户ID" style="-fx-border-color: black;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+            <TextField fx:id="Did" layoutX="65.0" layoutY="233.0" prefHeight="32.0" prefWidth="206.0" promptText="请输入用户名称或用户ID" style="-fx-border-color: black;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            </AnchorPane>
+        </VBox>
+    </children>
+</AnchorPane>

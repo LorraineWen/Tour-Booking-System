@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.manager.block.Mainviewcontoller">
+    <ImageView fitHeight="74.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="main/java/com/jsu/view/picture/jsu.jpg" />
+    </ImageView>
+    <Label layoutY="83.0" prefHeight="81.0" prefWidth="195.0" style="-fx-alignment: center-left; -fx-background-color: #41C7C5;" text="管理员界面" textAlignment="RIGHT">
+        <font>
+            <Font name="System Bold" size="38.0" />
+        </font>
+    </Label>
+    <Label layoutX="59.0" layoutY="2.0" prefHeight="81.0" prefWidth="908.0" text="       JSUUNIVERSITY TOUR BOOKING SYSTEM" textFill="#1a9ced">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="managercenterimage" fitHeight="57.0" fitWidth="60.0" layoutX="960.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="main/java/com/jsu/view/picture/manager center.png" />
+    </ImageView>
+    <Label fx:id="managercenter" layoutX="960.0" layoutY="57.0" prefHeight="3.0" prefWidth="60.0" style="-fx-background-color: white;" text="个人中心">
+        <font>
+            <Font name="System Bold Italic" size="15.0" />
+        </font>
+    </Label>
+   <Label layoutX="195.0" layoutY="83.0" prefHeight="81.0" prefWidth="842.0" style="-fx-background-color: #F0AC9E;" />
+   <Button layoutX="206.0" layoutY="99.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="175.0" onAction="#routemanage" style="-fx-background-color: #F0AC9E; -fx-border-color: blue;" text="路线管理">
+      <font>
+         <Font name="System Bold Italic" size="30.0" />
+      </font>
+   </Button>
+   <Button layoutX="403.0" layoutY="99.0" mnemonicParsing="false" onAction="#usermanage" prefHeight="59.0" prefWidth="175.0" style="-fx-background-color: #F0AC9E; -fx-border-color: blue;" text="用户管理">
+      <font>
+         <Font name="System Bold Italic" size="30.0" />
+      </font>
+   </Button>
+   <Button layoutX="602.0" layoutY="99.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="175.0" style="-fx-background-color: #F0AC9E; -fx-border-color: blue;" text="订单管理" onAction="#ordermanage">
+      <font>
+         <Font name="System Bold Italic" size="30.0" />
+      </font>
+   </Button>
+   <Button layoutX="848.0" layoutY="99.0" mnemonicParsing="false" onAction="#exitsystem" prefHeight="59.0" prefWidth="175.0" style="-fx-background-color: #F0AC9E; -fx-border-color: blue;" text="退出系统">
+      <font>
+         <Font name="System Bold Italic" size="30.0" />
+      </font>
+   </Button>
+</AnchorPane>

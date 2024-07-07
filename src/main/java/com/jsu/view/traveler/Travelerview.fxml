@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="788.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.traveler.Travelerviewcontroller">
+<fx:include source="block/Mainview.fxml" />
+   <TableView fx:id="tableView" layoutX="-1.0" layoutY="222.0" prefHeight="484.0" prefWidth="1020.0" style="-fx-background-color: #FFFFFF; -fx-border-color: black;">
+     <columns>
+       <TableColumn fx:id="Tid" prefWidth="180.33334350585938" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="路线id" />
+       <TableColumn fx:id="Tname" prefWidth="112.66665649414062" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="路线名称" />
+         <TableColumn fx:id="Tways" prefWidth="83.33331298828125" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="交通方式" />
+         <TableColumn fx:id="Tprice" prefWidth="98.0" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="总费用" />
+         <TableColumn fx:id="Ttime" prefWidth="86.33331298828125" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="总时间" />
+         <TableColumn fx:id="Tdepiction" prefWidth="463.3333740234375" style="-fx-font: 15px border; -fx-background-color: orange; -fx-border-color: black;" text="路线描述" />
+     </columns>
+   </TableView>
+   <Label layoutY="162.0" prefHeight="62.0" prefWidth="1020.0" style="-fx-alignment: center; -fx-background-color: #1DD46B;" text="旅游路线">
+      <font>
+         <Font name="System Bold" size="47.0" />
+      </font>
+   </Label>
+   <Button layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#searchroute" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #8350C6;" text="搜索路线" textFill="WHITE" />
+   <Button layoutX="751.0" layoutY="728.0" mnemonicParsing="false" onAction="#orderscene" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #F8D714;" text="查看订单" textFill="WHITE">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Button>
+   <TextField fx:id="Qname" layoutX="128.0" layoutY="173.0" prefHeight="39.0" prefWidth="207.0" promptText="请输入路线的相关名称" style="-fx-alignment: center; -fx-border-color: black;">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </TextField>
+   <Button layoutX="95.0" layoutY="735.0" mnemonicParsing="false" onAction="#display" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: #49f585;" text="显示所有路线" textFill="WHITE">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Button>
+   <Button layoutX="911.0" layoutY="173.0" mnemonicParsing="false" onAction="#exitsystem" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #ff0000;" text="退出系统" textFill="WHITE" />
+</AnchorPane>

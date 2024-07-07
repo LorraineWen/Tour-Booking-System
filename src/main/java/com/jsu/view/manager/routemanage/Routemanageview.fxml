@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="828.0" prefWidth="1031.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.manager.routemanage.Routemanageviewcontroller">
+    <children>
+        <VBox fx:id="Anvbox" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="849.0" prefWidth="1067.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+                <fx:include source="../block/Mainview.fxml" />
+                <TableView fx:id="tableView" layoutX="-1.0" layoutY="323.0" prefHeight="506.0" prefWidth="1036.0">
+                    <columns>
+                        <TableColumn fx:id="Tid" prefWidth="171.83" style="-fx-font: 15px bolder;" text="线路id" />
+                        <TableColumn fx:id="Tname" prefWidth="171.83" style="-fx-font: 15px bolder;" text="线路名称" />
+                        <TableColumn fx:id="Tways" prefWidth="171.83" style="-fx-font: 15px bolder;" text="交通方式" />
+                        <TableColumn fx:id="Tdepiction" prefWidth="171.83" style="-fx-font: 15px bolder;" text="线路描述" />
+                        <TableColumn fx:id="Tprice" prefWidth="171.83" style="-fx-font: 15px bolder;" text="线路价格" />
+                        <TableColumn fx:id="Ttime" prefWidth="175.0" style="-fx-font: 15px bolder;" text="所需时间" />
+                    </columns>
+                </TableView>
+                <Label id="tabletype" layoutX="1.0" layoutY="280.0" prefHeight="43.0" prefWidth="1036.0" style="-fx-alignment: center; -fx-background-color: green;" text="旅游路线管理界面" textFill="#f6f6f6">
+                    <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                    </font></Label>
+                <Button layoutX="1.0" layoutY="235.0" mnemonicParsing="false" onAction="#deleteroute" prefHeight="32.0" prefWidth="64.0" style="-fx-background-color: #ff0000;" text="删除线路" textFill="WHITE" />
+                <Button layoutX="1.0" layoutY="174.0" mnemonicParsing="false" onAction="#queryroute" prefHeight="32.0" prefWidth="64.0" style="-fx-background-color: #046CA0;" text="查询线路" textFill="WHITE" />
+                <Button layoutX="948.0" layoutY="174.0" mnemonicParsing="false" onAction="#addroutescene" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: orange;" text="添加线路" textFill="WHITE" />
+                <Button layoutX="946.0" layoutY="235.0" mnemonicParsing="false" onAction="#updateroutescene" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #1AD879;" text="修改线路信息" textFill="WHITE" />
+                <TextField fx:id="Qid" layoutX="65.0" layoutY="173.0" prefHeight="32.0" prefWidth="206.0" promptText="请输入线路ID" style="-fx-border-color: black; -fx-alignment: center;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Did" layoutX="65.0" layoutY="233.0" prefHeight="32.0" prefWidth="206.0" promptText="请输入线路ID" style="-fx-border-color: black; -fx-alignment: Center;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+            </AnchorPane>
+        </VBox>
+    </children>
+</AnchorPane>

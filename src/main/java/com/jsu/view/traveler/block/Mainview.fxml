@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.traveler.block.Mainviewcontroller">
+    <ImageView fitHeight="74.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="main/java/com/jsu/view/picture/jsu.jpg" />
+    </ImageView>
+    <Label layoutY="83.0" prefHeight="81.0" prefWidth="1020.0" style="-fx-alignment: center; -fx-background-color: #41C7C5;" text="吉首大学旅游预订系统" textAlignment="RIGHT">
+        <font>
+            <Font name="System Bold" size="38.0" />
+        </font>
+    </Label>
+    <Label layoutX="59.0" layoutY="2.0" prefHeight="81.0" prefWidth="959.0" style="-fx-background-color: white" text="       JSUUNIVERSITY TOUR BOOKING SYSTEM" textFill="#1a9ced">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="travelercenterimage" fitHeight="57.0" fitWidth="60.0" layoutX="944.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="main/java/com/jsu/view/picture/traveler center.png" />
+    </ImageView>
+    <Label fx:id="travelercenter" layoutX="944.0" layoutY="57.0" prefHeight="3.0" prefWidth="60.0" style="-fx-background-color: white;" text="个人中心">
+        <font>
+            <Font name="System Bold Italic" size="15.0" />
+        </font>
+    </Label>
+</AnchorPane>

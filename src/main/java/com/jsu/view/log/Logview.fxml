@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642" prefWidth="933" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.jsu.view.log.Logviewcontroller">
+    <children>
+        <VBox fx:id="Anvbox" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="642.0" prefWidth="933.0" VBox.vgrow="ALWAYS">
+                <TextField fx:id="account" alignment="CENTER" layoutX="331.0" layoutY="250.0" promptText="请输入手机号" style="-fx-border-color: black;">
+                    <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                    </font>
+                </TextField>
+                <Button id="log" layoutX="341.0" layoutY="441.0" mnemonicParsing="false" onAction="#log" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #5AA659;" text="登录" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="password" alignment="CENTER" layoutX="333.0" layoutY="347.0" promptText="请输入密码" style="-fx-border-color: black;">
+                    <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                    </font>
+                </TextField>
+                <Label layoutY="162.0" prefHeight="49.0" prefWidth="935.0" style="-fx-alignment: center;" text="登录界面" textFill="#5aa659">
+                    <font>
+                        <Font name="System Bold" size="38.0" />
+                    </font>
+                </Label>
+                <Label layoutX="219.0" layoutY="257.0" text="用户账号:" textFill="#0d4c84">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="219.0" layoutY="354.0" text="用户密码:" textFill="#0d4c84">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Button id="register" layoutX="495.0" layoutY="441.0" mnemonicParsing="false" onAction="#toregister" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #5AA659;" text="注册" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="74.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="main/java/com/jsu/view/picture/jsu.jpg" />
+                </ImageView>
+                <Label layoutX="-4.0" layoutY="81.0" prefHeight="81.0" prefWidth="939.0" style="-fx-alignment: center; -fx-background-color: #41C7C5;" text="吉首大学旅游预订系统" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="38.0" />
+                    </font>
+                </Label>
+            <Label layoutX="59.0" layoutY="2.0" prefHeight="74.0" prefWidth="876.0" text="       JSUUNIVERSITY TOUR BOOKING SYSTEM" textFill="#1a9ced">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error" layoutX="348.0" layoutY="394.0" opacity="0.0" prefHeight="39.0" prefWidth="242.0" style="-fx-background-color:hotpink;-fx-font:15px bolder;-fx-alignment: center;" />
+            <Button layoutY="194.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="165.0" style="-fx-background-color: #ea193b;" text="退出系统" textFill="WHITE" onAction="#exitsystem">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            </AnchorPane>
+        </VBox>
+    </children>
+</AnchorPane>
